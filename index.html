@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio MVR</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/tailwind.css">
+</head>
+<body class="bg-sky-100 flex flex-col items-center font-poppins">
+    <nav class="w-9/12 h-20 mt-8 text-xl flex items-center border-4 border-white rounded-2xl">
+        <ul class="flex w-full items-center justify-evenly">
+            <li class="mx-2">
+                <a class="relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left" href="https://instagram.com/martinvruiz/" target="_blank">Instagram</a>
+            </li>
+            <li class="mx-2">
+                <a class="relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left" href="https://www.linkedin.com/in/martin-villalo-ruiz/" target="_blank">LinkedIn</a>
+            </li>
+        </ul>
+    </nav>
+    <main class="flex mt-4 flex-col items-center w-4/5">
+        <section class="md:w-full">
+            <img class="md:object-none w-full h-full" src="assets/img/LogoMVRT.png" alt="Logo Martin Villalo Ruiz" srcset="">
+        </section>
+        <button class="w-1/2 border-transparent rounded-2xl h-12 bg-sky-800 hover:opacity-50" id="btn">Mas info</button>
+        <button class="w-1/2 border-transparent rounded-2xl h-12 bg-sky-800 hover:opacity-50 hidden" id="btn-2">Menos info</button>
+        <div id="info" class="hidden opacity-0 transition-opacity duration-500 w-full">
+        <div>
+            <section class="flex justify-evenly text-left mt-4">
+                <div class="p-4 text-lg md:text-4xl transition ease-in-out delay-150 hover:scale-110">
+                    <p>Hola!</p>
+                    <p>Soy Martin Villalo Ruiz</p>
+        </div>
+        <div class="flex flex-col text-sm md:text-lg p-4">
+            <p>Soy FrontEnd Developer</p>
+            <p>Actualmente radicado en Buenos Aires, Argentina</p>
+            <h3 class="pt-1 text-center">Lenguajes actuales:</h3>
+            <span class="flex h-10 md:h-20 text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 630 630">
+                    <rect width="630" height="630" fill="#f7df1e"/>
+                    <path d="m423.2 492.19c12.69 20.72 29.2 35.95 58.4 35.95 24.53 0 40.2-12.26 40.2-29.2 0-20.3-16.1-27.49-43.1-39.3l-14.8-6.35c-42.72-18.2-71.1-41-71.1-89.2 0-44.4 33.83-78.2 86.7-78.2 37.64 0 64.7 13.1 84.2 47.4l-46.1 29.6c-10.15-18.2-21.1-25.37-38.1-25.37-17.34 0-28.33 11-28.33 25.37 0 17.76 11 24.95 36.4 35.95l14.8 6.34c50.3 21.57 78.7 43.56 78.7 93 0 53.3-41.87 82.5-98.1 82.5-54.98 0-90.5-26.2-107.88-60.54zm-209.13 5.13c9.3 16.5 17.76 30.45 38.1 30.45 19.45 0 31.72-7.61 31.72-37.2v-201.3h59.2v202.1c0 61.3-35.94 89.2-88.4 89.2-47.4 0-74.85-24.53-88.81-54.075z"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 452 520">
+                    <path fill="#e34f26" d="M41 460L0 0h451l-41 460-185 52" />
+                    <path fill="#ef652a" d="M226 472l149-41 35-394H226" />
+                    <path fill="#ecedee" d="M226 208h-75l-5-58h80V94H84l15 171h127zm0 147l-64-17-4-45h-56l7 89 117 32z"/>
+                    <path fill="#fff" d="M226 265h69l-7 73-62 17v59l115-32 16-174H226zm0-171v56h136l5-56z"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 452 520">
+                    <path fill="#0c73b8" d="M41 460L0 0h451l-41 460-185 52"/>
+                    <path fill="#30a9dc" d="M226 472l149-41 35-394H226"/>
+                    <path fill="#ecedee" d="M226 208H94l5 57h127zm0-114H84l5 56h137zm0 261l-124-33 7 60 117 32z"/>
+                    <path fill="#fff" d="M226 265h69l-7 73-62 17v59l115-32 26-288H226v56h80l-6 58h-74z"/>
+                  </svg>
+            </span>
+            </div>
+        </div>
+            <section class="text-lg text-center pt-6">
+                <p>Me inicié en el Desarrollo Web en 2023, y desde entonces supe que era mi pasión. He dedicado mucho tiempo y esfuerzo para aprender. Mi objetivo es seguir progresando, aspiro a ser capaz de afrontar cualquier desafío y contribuir significativamente en este ámbito.</p>
+            </section>
+        </section>
+    </div>
+        <section class="h-72 mb-8 mt-8 text-center">
+            <p class="text-3xl pb-6">Proyectos</p>
+            <span>
+                <div class="w-full flex items-center">
+                    <a href="https://tasktodomvr.vercel.app/" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/img/tasktodo.jpg" alt="Task to do">
+                    </a>
+                    <p class="pl-4 text-xl">En este proyecto puse como objetivo el ayudar a organizar y priorizar tareas, gracias a esto nace Task toDo. Se pueden agregar tareas, moverlas de columna y al finalizarlas esta la opcion de eliminarlas.</p>
+                </div>
+            </span>
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
